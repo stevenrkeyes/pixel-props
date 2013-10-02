@@ -1,0 +1,7 @@
+spinning fast, i could spin at 3.5 Hz
+1260 deg/s
+
+spinning slow, i could spin at 0.9 Hz
+324 deg/s
+
+for precision of 0.01 if i were integrating angular position to position something in the same place every cycle, i'd need a precision of 0.01 * 324 deg/s = 3.24 deg/s

@@ -1,0 +1,11 @@
+Brief Project Description *
+I want to make Pixel Poi, a pair of tubular LED arrays that the user spins while interesting effects appear on the arrays. The effects could be preprogrammed, synced with music, or rely on live sensors.
+
+Budget *
+
+The Pitch *
+
+The Deets *
+
+Timeline *
+

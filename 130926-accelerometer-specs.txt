@@ -1,0 +1,16 @@
+for the accelerometer, i want to be able to identify the top of the arc within a precision of 0.01 -- this is 3.6 degrees. 
+
+If the accelerometer is pointed toward the handle at all times, and the poi is spinning with radius r and angular velocity omega (omega_meas measured by the gyro), and the poi has mass m, then the following is true.
+
+range:
++/- 1.5g
+
+precision:
+14 bits for 3 degrees
+17 bits for 1 degree
+
+(see pics of calculations for explanation)
+
+we could also calculate a range based on how fast I think I can change the rate at which I'm spinning, if I think angular acceleration, radial acceleration, or radial velocity would be interesting.
+
+we could also calculate a precision based on the ability to differentiate various radii.

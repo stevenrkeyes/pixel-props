@@ -1,0 +1,18 @@
+brian says i should get a 32 bit micro if i want to use his effects library bespeckled (written in C), so I need a micro that has a C compiler for its architecture / machine code, which probably exists for most micros. For the fort, I think they used STM chips, but I'm not sure. Eric recommends one that has hardware division because bespeckled uses a lot of division, and hardware division runs much faster. Eric likes ARM. "If you go with a 32 bit architecture, go with ARM".
+
+"I will help you design a universal board and then buy it off you" says Becca
+
+He also says I could fix bespeckled to work in 8 bit chip if i wanted. Becca says "ARM sounds a little complicated for that."
+
+for the micro, eric says i should keep an inventory of how many things i'm talking to over serial, and make sure the chip has enough UART items to talk to this many friends.
+
+i should get a FTDI chip, which my micro can talk to over serial to talk to my computer over USB; I can use this to talk to the chip over serial (like to give cues or to upload presets) OR to enter the bootloader of the chip to reprogram the chip.
+
+SPI is easier than I2C apparently
+both require 2-4ish pins
+
+Xbee is really easy to use, but the form factor is a little funny. however, it can be used not only by each poi to talk to one another but also to talk to some third xbee connected to a computer
+
+all the reset pins should be connected together and to the reset pin on the micro, which can be used to reset everyone or else by the micro to simulate resetting everything without resetting the micro itself.
+
+eric says i should spec my micro last
