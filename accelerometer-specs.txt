@@ -1,6 +1,10 @@
-for the accelerometer, i want to be able to identify the top of the arc within a precision of 0.01 -- this is 3.6 degrees. 
+for the accelerometer, i pose this challenge. [given the instantaneous angular velocity measured from the gyro,] i want to be able to identify the exact position in the arc to some precision. the accelerometer senses a superposition of the acceleration and gravity, so this challenge is hardest at the tops and bottoms of the arc, when the change in the gravity term is most linear / flat with respect to time. then, i can clarify the specification to be the following.
+
+i want to be able to identify the top of the arc within a precision of, say, 0.01 -- this is 3.6 degrees. 
 
 If the accelerometer is pointed toward the handle at all times, and the poi is spinning with radius r and angular velocity omega (omega_meas measured by the gyro), and the poi has mass m, then the following is true.
+
+(see pics of calculations for explanation)
 
 range:
 +/- 1.5g
@@ -9,8 +13,12 @@ precision:
 14 bits for 3 degrees
 17 bits for 1 degree
 
-(see pics of calculations for explanation)
+that said, the poi will probably experience accelerations that clip if recorded at this range (such as when accelerating things, changing radius, and hitting things), so it would be nice to bump this up to 2 or 3 g +/-.
 
 we could also calculate a range based on how fast I think I can change the rate at which I'm spinning, if I think angular acceleration, radial acceleration, or radial velocity would be interesting.
 
 we could also calculate a precision based on the ability to differentiate various radii.
+
+Anyway, looks like this chip will cost $2-6
+
+if we're shelling out for expensive gyros ($7) and expensive accelerometers ($6), it might be worth it to go with something like the MPU-60X0, which is cheaper total ($11), pretty nice in terms of range, precision, etc, and plus is then one less chip, making the board easier as well as i guess requiring less communication channels out of the micro, which would make it cheaper.

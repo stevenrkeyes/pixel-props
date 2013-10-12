@@ -16,3 +16,7 @@ Xbee is really easy to use, but the form factor is a little funny. however, it c
 all the reset pins should be connected together and to the reset pin on the micro, which can be used to reset everyone or else by the micro to simulate resetting everything without resetting the micro itself.
 
 eric says i should spec my micro last
+
+
+
+still not quite sure how to spec the micro. guessing a chip will cost $2-8 ?

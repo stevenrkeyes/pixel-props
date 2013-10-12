@@ -5,3 +5,16 @@ spinning slow, i could spin at 0.9 Hz
 324 deg/s
 
 for precision of 0.01 if i were integrating angular position to position something in the same place every cycle, i'd need a precision of 0.01 * 324 deg/s = 3.24 deg/s
+
+this is 3.24 deg/s / LSB
+or 0.309 LSB / (deg/s)
+
+I performed this search:
+http://www.digikey.com/product-search/en?FV=fff4001e%2Cfff8048b%2Cd8026a%2Cd80276%2Cd802ec%2Cd80300%2Cd803d8%2C11e00012%2C11e00015%2C11e0001a%2C11e0001b%2C11e0001e%2C11e0001f&k=gyro&mnonly=0&newproducts=0&ColumnSort=1000011&page=1&stock=0&pbfree=0&rohs=0&quantity=&ptm=0&fid=0&pageSize=25
+
+
+looking at digikey, looks like even the cheapest of the digital chips far meet our requirements in terms of number of axes (all have 3) and precision (all have like 2 orders of magnitude more than we need)
+
+they're all about $5-7 / chip
+
+
