@@ -5,18 +5,42 @@ Pixel Props
 iunno
 
 Brief Project Description *
-I want to make Pixel Poi, a pair of tubular LED arrays that the user spins while interesting effects appear on the arrays. The effects could be preprogrammed, synced with music, or rely on live sensors.
+We want to make LED props for spinning that use on-board motion sensors to play effects.
 
 Budget *
-working on it
+See the Pitch and the Deets for a description of the project. Significantly, I'm submitting one proposal, but this project essentially has two deliverables in it: Pixel Poi and a LED Staff. Because these will use the same sensor and control circuitry, the cost for prototyping and breadboarding will be that of only one prop, but the costs for the final projects are those of two.
+
+Prototype
+	ICs	$50	
+
+Poi ($160)
+	LEDs	$90	
+	ICs	$40	
+	Batteries	$15	
+	Casing	$15
+
+Staff ($140)
+	LEDs	$90	
+	ICs	$20	
+	batteries	$10	
+	casing	$20
+
+Other
+	Adding wireless capability	$50	
+	Producing PCBs	$100
+
+Total: $500
+
 
 The Pitch *
-I’ve been learning to spin poi with the MIT Spinning Arts Club since freshman year. poi are tethered weights that a performer spins to create cool effects and illusions. A variety of props can be used at the ends of poi leashes, but an interesting prop developed recently is an array of LEDs. By alternating which LEDs are active, the performer can create cool patterns or trace out images across space. Here's an example of a set that a company sells for over $800.
+I’ve been learning to spin poi with the MIT Spinning Arts Club since freshman year. Poi are tethered weights that a performer spins to create cool effects and illusions. A variety of props can be used at the ends of poi leashes, but an interesting prop developed recently is an array of LEDs, called Pixel Poi. By alternating which LEDs are active, the performer can create cool patterns or trace out images across space. Here's an example of a set that a company sells for over $800.
 http://www.apixeltoys.com/p/154/pixelpois-profesional
-However, I plan to make a better product than just LEDs and timing cues. The poi I build will detect their motion with sensors and play patterns based on this input. As a performer adjusts his tempo or style, the poi will respond with different patterns. This project will be way cool to see or to play with!
+However, I plan to make a better product than just LEDs and timing cues. The poi I build will detect their motion with sensors and play patterns based on this input. As a performer adjusts his tempo or style, the poi will respond with different patterns.
+
+Also, the circuitry in Pixel Poi product could be applied to other props, too, which is why my friend Becca Greene, a staff spinner, is joining me. We'll use the same circuitry in a rigid staff to produce a second awesome prop. This project will be way cool to see or to play with!
 
 The Deets *
-The poi will be constructed with a strip of LEDs in a tube with controller circuitry. Each poi will have an accelerometer and gyroscope, the minimal set of sensors to instantaneously determine the angular velocity, acceleration, and radius of the poi orbit. Painting images looks cool in long exposure shots, so I will implement this capability. I will also implement LED patterns more like those used on a LED feature for a dance party--strobes, pulses, knight rider patterns, etc. To this end, I plan to use the library cursedlite, which was written by my friends for the LEDs on the East Campus Rush fort for the dancy party. For all these patterns, timing will be based on the intertial information from the sensors. Also, the board I produce to drive the LEDs could be used on other props--for example, a pixel staff, and one of my friends plans to build one of these. Finally, if I have time, I would like to implement wireless communication between the poi and from the poi to an external computer, so a light DJ could remotely run the effects.
+The props will be constructed with strips of LEDs in clear tubes with controller circuitry. Each prop will have an accelerometer and gyroscope, the minimal set of sensors to instantaneously determine the angular velocity, acceleration, and radius of the orbit. Painting images looks cool in long exposure shots, so we will implement this capability. However, we will also implement LED patterns more like those used on the LED feature of a dance party--strobes, pulses, knight rider patterns, etc. To this end, we plan to use the library cursedlite, which was written by some of our friends for the LED feature on the East Campus Rush fort for the dance party. For all these patterns, timing will be based on the intertial information from the sensors. Finally, if we have time, we would like to implement wireless communication on our props, so they could communicate with each other or with an external computer, so, for example, a light DJ could remotely run the effects or sync them with music.
 
 
 Timeline *
@@ -29,12 +53,12 @@ December
  -micro communicating with the gyro, the accelerometer, and the LEDs
  -micro doing basic dynamics calculations with gyro and accelerometer data
  -cursedlight library running on micro running LEDs
--lay out and order board for final product
--order case / hardware for final product
+-lay out and order board for final products
+-order case / hardware for final products
  
 January
--manufacture case for final product
--assemble circuitry for final product
+-manufacture case for final products
+-assemble circuitry for final products
 -write code that uses sensor input to drive LEDs in certain patterns
 
 with any time left, I'd also like to implement wireless communication between the two poi or between them and an external computer.
