@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+    
+    
+  <CurrentConfigs><Project>ADC_LowPower/ADC_LowPower</Project><Project>ADC_DMA/ADC_DMA</Project><Project>DMA_FLASH_RAM/DMA_FLASH_RAM</Project><Project>DAC_SignalsGeneration/DAC_SignalsGeneration</Project><Project>TIM_ADC_Trigger/TIM_ADC_Trigger</Project><Project>TIM_Complementary_signals/TIM_Complementary_signals</Project><Project>TIM_PWM_Input/TIM_PWM_Input</Project><Project>TIM_PWM_Output/TIM_PWM_Output</Project><Project>TIM_TimeBase/TIM_TimeBase</Project><Project>DMA_RAM_DAC/DMA_RAM_DAC</Project><Project>EXTI/EXTI</Project><Project>Flash_Program/Flash_Program</Project><Project>IO_Toggle/IO_Toggle</Project><Project>STM32F0-Discovery_Demo/STM32F0_Discovery</Project><Project>PWR_STOP/PWR_STOP</Project><Project>RCC/RCC</Project><Project>SysTick/SysTick</Project><Project>IWDG_Reset/IWDG_Reset</Project><Project>NVIC_WFI_Mode/NVIC_WFI_Mode</Project><Project>PWR_CurrentConsumption/PWR_CurrentConsumption</Project><Project>PWR_STANDBY/PWR_STANDBY</Project></CurrentConfigs><CurrentProj>DMA_FLASH_RAM</CurrentProj><OverviewSelected>1</OverviewSelected></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>655</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      <PreferedWindows><Position>1</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows></Workspace>
+    <Build><ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1395</ColumnWidth1><ColumnWidth2>372</ColumnWidth2><ColumnWidth3>93</ColumnWidth3></Build><TerminalIO/><Debug-Log><ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1861</ColumnWidth1></Debug-Log></Static>
+    <Windows>
+      
+    <Wnd1><Tabs><Tab><Identity>TabID-9356-32746</Identity><TabName>Build</TabName><Factory>Build</Factory><Session/></Tab><Tab><Identity>TabID-27194-53</Identity><TabName>Debug Log</TabName><Factory>Debug-Log</Factory><Session/></Tab></Tabs><SelectedTab>1</SelectedTab></Wnd1></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\Peripheral_Examples\TIM_PWM_Output\main.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>968</SelStart2><SelEnd2>968</SelEnd2></Tab><ActiveTab>0</ActiveTab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-02e5a360><key>iaridepm.enu1</key></Toolbar-02e5a360></Sizes></Row0></Top><Left><Row0><Sizes/></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>198</Bottom><Right>1922</Right><x>-2</x><y>-2</y><xscreen>1924</xscreen><yscreen>200</yscreen><sizeHorzCX>1002083</sizeHorzCX><sizeHorzCY>198413</sizeHorzCY><sizeVertCX>104167</sizeVertCX><sizeVertCY>198413</sizeVertCY></Rect></Wnd1></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+

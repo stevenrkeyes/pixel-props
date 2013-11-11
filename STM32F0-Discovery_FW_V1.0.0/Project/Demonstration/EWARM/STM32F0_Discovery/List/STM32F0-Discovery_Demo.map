@@ -1,0 +1,337 @@
+###############################################################################
+#                                                                             #
+# IAR ELF Linker V6.70.1.5641/W32 for ARM               03/Nov/2013  01:41:41 #
+# Copyright 2007-2013 IAR Systems AB.                                         #
+#                                                                             #
+#    Output file  =  E:\Downloads\stm32f0discovery_fw\STM32F0-Discovery_FW_V1 #
+#                    .0.0\Project\Demonstration\EWARM\STM32F0_Discovery\Exe\S #
+#                    TM32F0-Discovery_Demo.out                                #
+#    Map file     =  E:\Downloads\stm32f0discovery_fw\STM32F0-Discovery_FW_V1 #
+#                    .0.0\Project\Demonstration\EWARM\STM32F0_Discovery\List\ #
+#                    STM32F0-Discovery_Demo.map                               #
+#    Command line =  E:\Downloads\stm32f0discovery_fw\STM32F0-Discovery_FW_V1 #
+#                    .0.0\Project\Demonstration\EWARM\STM32F0_Discovery\Obj\m #
+#                    ain.o E:\Downloads\stm32f0discovery_fw\STM32F0-Discovery #
+#                    _FW_V1.0.0\Project\Demonstration\EWARM\STM32F0_Discovery #
+#                    \Obj\startup_stm32f0xx.o E:\Downloads\stm32f0discovery_f #
+#                    w\STM32F0-Discovery_FW_V1.0.0\Project\Demonstration\EWAR #
+#                    M\STM32F0_Discovery\Obj\stm32f0_discovery.o              #
+#                    E:\Downloads\stm32f0discovery_fw\STM32F0-Discovery_FW_V1 #
+#                    .0.0\Project\Demonstration\EWARM\STM32F0_Discovery\Obj\s #
+#                    tm32f0xx_adc.o E:\Downloads\stm32f0discovery_fw\STM32F0- #
+#                    Discovery_FW_V1.0.0\Project\Demonstration\EWARM\STM32F0_ #
+#                    Discovery\Obj\stm32f0xx_cec.o                            #
+#                    E:\Downloads\stm32f0discovery_fw\STM32F0-Discovery_FW_V1 #
+#                    .0.0\Project\Demonstration\EWARM\STM32F0_Discovery\Obj\s #
+#                    tm32f0xx_comp.o E:\Downloads\stm32f0discovery_fw\STM32F0 #
+#                    -Discovery_FW_V1.0.0\Project\Demonstration\EWARM\STM32F0 #
+#                    _Discovery\Obj\stm32f0xx_crc.o                           #
+#                    E:\Downloads\stm32f0discovery_fw\STM32F0-Discovery_FW_V1 #
+#                    .0.0\Project\Demonstration\EWARM\STM32F0_Discovery\Obj\s #
+#                    tm32f0xx_dac.o E:\Downloads\stm32f0discovery_fw\STM32F0- #
+#                    Discovery_FW_V1.0.0\Project\Demonstration\EWARM\STM32F0_ #
+#                    Discovery\Obj\stm32f0xx_dbgmcu.o                         #
+#                    E:\Downloads\stm32f0discovery_fw\STM32F0-Discovery_FW_V1 #
+#                    .0.0\Project\Demonstration\EWARM\STM32F0_Discovery\Obj\s #
+#                    tm32f0xx_dma.o E:\Downloads\stm32f0discovery_fw\STM32F0- #
+#                    Discovery_FW_V1.0.0\Project\Demonstration\EWARM\STM32F0_ #
+#                    Discovery\Obj\stm32f0xx_exti.o                           #
+#                    E:\Downloads\stm32f0discovery_fw\STM32F0-Discovery_FW_V1 #
+#                    .0.0\Project\Demonstration\EWARM\STM32F0_Discovery\Obj\s #
+#                    tm32f0xx_flash.o E:\Downloads\stm32f0discovery_fw\STM32F #
+#                    0-Discovery_FW_V1.0.0\Project\Demonstration\EWARM\STM32F #
+#                    0_Discovery\Obj\stm32f0xx_gpio.o                         #
+#                    E:\Downloads\stm32f0discovery_fw\STM32F0-Discovery_FW_V1 #
+#                    .0.0\Project\Demonstration\EWARM\STM32F0_Discovery\Obj\s #
+#                    tm32f0xx_i2c.o E:\Downloads\stm32f0discovery_fw\STM32F0- #
+#                    Discovery_FW_V1.0.0\Project\Demonstration\EWARM\STM32F0_ #
+#                    Discovery\Obj\stm32f0xx_it.o                             #
+#                    E:\Downloads\stm32f0discovery_fw\STM32F0-Discovery_FW_V1 #
+#                    .0.0\Project\Demonstration\EWARM\STM32F0_Discovery\Obj\s #
+#                    tm32f0xx_iwdg.o E:\Downloads\stm32f0discovery_fw\STM32F0 #
+#                    -Discovery_FW_V1.0.0\Project\Demonstration\EWARM\STM32F0 #
+#                    _Discovery\Obj\stm32f0xx_misc.o                          #
+#                    E:\Downloads\stm32f0discovery_fw\STM32F0-Discovery_FW_V1 #
+#                    .0.0\Project\Demonstration\EWARM\STM32F0_Discovery\Obj\s #
+#                    tm32f0xx_pwr.o E:\Downloads\stm32f0discovery_fw\STM32F0- #
+#                    Discovery_FW_V1.0.0\Project\Demonstration\EWARM\STM32F0_ #
+#                    Discovery\Obj\stm32f0xx_rcc.o                            #
+#                    E:\Downloads\stm32f0discovery_fw\STM32F0-Discovery_FW_V1 #
+#                    .0.0\Project\Demonstration\EWARM\STM32F0_Discovery\Obj\s #
+#                    tm32f0xx_rtc.o E:\Downloads\stm32f0discovery_fw\STM32F0- #
+#                    Discovery_FW_V1.0.0\Project\Demonstration\EWARM\STM32F0_ #
+#                    Discovery\Obj\stm32f0xx_spi.o                            #
+#                    E:\Downloads\stm32f0discovery_fw\STM32F0-Discovery_FW_V1 #
+#                    .0.0\Project\Demonstration\EWARM\STM32F0_Discovery\Obj\s #
+#                    tm32f0xx_syscfg.o E:\Downloads\stm32f0discovery_fw\STM32 #
+#                    F0-Discovery_FW_V1.0.0\Project\Demonstration\EWARM\STM32 #
+#                    F0_Discovery\Obj\stm32f0xx_tim.o                         #
+#                    E:\Downloads\stm32f0discovery_fw\STM32F0-Discovery_FW_V1 #
+#                    .0.0\Project\Demonstration\EWARM\STM32F0_Discovery\Obj\s #
+#                    tm32f0xx_usart.o E:\Downloads\stm32f0discovery_fw\STM32F #
+#                    0-Discovery_FW_V1.0.0\Project\Demonstration\EWARM\STM32F #
+#                    0_Discovery\Obj\stm32f0xx_wwdg.o                         #
+#                    E:\Downloads\stm32f0discovery_fw\STM32F0-Discovery_FW_V1 #
+#                    .0.0\Project\Demonstration\EWARM\STM32F0_Discovery\Obj\s #
+#                    ystem_stm32f0xx.o --redirect _Printf=_PrintfFull         #
+#                    --redirect _Scanf=_ScanfFull -o                          #
+#                    E:\Downloads\stm32f0discovery_fw\STM32F0-Discovery_FW_V1 #
+#                    .0.0\Project\Demonstration\EWARM\STM32F0_Discovery\Exe\S #
+#                    TM32F0-Discovery_Demo.out --map                          #
+#                    E:\Downloads\stm32f0discovery_fw\STM32F0-Discovery_FW_V1 #
+#                    .0.0\Project\Demonstration\EWARM\STM32F0_Discovery\List\ #
+#                    STM32F0-Discovery_Demo.map --config                      #
+#                    E:\Downloads\stm32f0discovery_fw\STM32F0-Discovery_FW_V1 #
+#                    .0.0\Project\Demonstration\EWARM\stm32f0xx_flash.icf     #
+#                    --semihosting --entry __iar_program_start --vfe          #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x08000000 { ro section .intvec };
+"P1":  place in [from 0x08000000 to 0x0800ffff] { ro };
+"P2":  place in [from 0x20000000 to 0x20001fff] { rw, block CSTACK, block HEAP };
+
+  Section            Kind        Address   Size  Object
+  -------            ----        -------   ----  ------
+"A1":                                      0xc0
+  .intvec            ro code  0x08000000   0xc0  startup_stm32f0xx.o [1]
+                            - 0x080000c0   0xc0
+
+"P1":                                     0x750
+  .text              ro code  0x080000c0  0x136  stm32f0_discovery.o [1]
+  .text              ro code  0x080001f6   0x2a  zero_init3.o [4]
+  .text              ro code  0x08000220  0x108  stm32f0xx_rcc.o [1]
+  .text              ro code  0x08000328   0x7a  stm32f0xx_gpio.o [1]
+  .text              ro code  0x080003a2    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080003a4   0x28  stm32f0xx_syscfg.o [1]
+  .text              ro code  0x080003cc   0x6c  stm32f0xx_exti.o [1]
+  .text              ro code  0x08000438   0x50  stm32f0xx_misc.o [1]
+  .text              ro code  0x08000488   0xae  I32DivModFast.o [4]
+  .text              ro code  0x08000536    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x08000538    0x2  IntDivZer.o [4]
+  .text              ro code  0x0800053a    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x0800053c   0xe4  main.o [1]
+  .text              ro code  0x08000620   0xb4  system_stm32f0xx.o [1]
+  .text              ro code  0x080006d4   0x30  copy_init3.o [4]
+  .text              ro code  0x08000704   0x28  data_init.o [4]
+  .iar.init_table    const    0x0800072c   0x24  - Linker created -
+  .text              ro code  0x08000750   0x1a  cmain.o [4]
+  .text              ro code  0x0800076a    0x4  low_level_init.o [3]
+  .text              ro code  0x0800076e    0x8  exit.o [3]
+  .text              ro code  0x08000776    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x08000778    0xa  cexit.o [4]
+  .text              ro code  0x08000782    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x08000784   0x14  exit.o [5]
+  .text              ro code  0x08000798   0x10  startup_stm32f0xx.o [1]
+  .text              ro code  0x080007a8   0x10  stm32f0xx_it.o [1]
+  .text              ro code  0x080007b8    0xc  cstartup_M.o [4]
+  .text              ro code  0x080007c4    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080007c6    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080007c8    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080007ca    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080007cc    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080007ce    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080007d0    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080007d2    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080007d4    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080007d6    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080007d8    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080007da    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080007dc    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080007de    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080007e0    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080007e2    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080007e4    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080007e6    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080007e8    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080007ea    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080007ec    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080007ee    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080007f0    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080007f2    0x2  startup_stm32f0xx.o [1]
+  .rodata            const    0x080007f4    0x0  zero_init3.o [4]
+  .rodata            const    0x080007f4    0x0  copy_init3.o [4]
+  Initializer bytes  ro data  0x080007f4   0x1c  <for P2 s0>
+                            - 0x08000810  0x750
+
+"P2", part 1 of 3:                         0x1c
+  P2 s0                       0x20000000   0x1c  <Init block>
+    .data            inited   0x20000000   0x10  stm32f0xx_rcc.o [1]
+    .data            inited   0x20000010    0x8  stm32f0_discovery.o [1]
+    .data            inited   0x20000018    0x4  stm32f0_discovery.o [1]
+                            - 0x2000001c   0x1c
+
+"P2", part 2 of 3:                          0xc
+  .bss               zero     0x2000001c    0x4  main.o [1]
+  .bss               zero     0x20000020    0x1  main.o [1]
+                            - 0x20000021    0x5
+
+"P2", part 3 of 3:                        0x400
+  CSTACK                      0x20000028  0x400  <Block>
+    CSTACK           uninit   0x20000028  0x400  <Block tail>
+                            - 0x20000428  0x400
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x5:
+          0x2000001c   0x5
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x1c:
+          0x080007f4  0x1c
+    1 destination range, total size 0x1c:
+          0x20000000  0x1c
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module               ro code  ro data  rw data
+    ------               -------  -------  -------
+E:\Downloads\stm32f0discovery_fw\STM32F0-Discovery_FW_V1.0.0\Project\Demonstration\EWARM\STM32F0_Discovery\Obj: [1]
+    main.o                   228                 5
+    startup_stm32f0xx.o      266
+    stm32f0_discovery.o      310       12       12
+    stm32f0xx_exti.o         108
+    stm32f0xx_gpio.o         122
+    stm32f0xx_it.o            16
+    stm32f0xx_misc.o          80
+    stm32f0xx_rcc.o          264       16       16
+    stm32f0xx_syscfg.o        40
+    system_stm32f0xx.o       180
+    ----------------------------------------------
+    Total:                 1 614       28       33
+
+command line: [2]
+    ----------------------------------------------
+    Total:
+
+dl6M_tln.a: [3]
+    exit.o                     8
+    low_level_init.o           4
+    ----------------------------------------------
+    Total:                    12
+
+rt6M_tl.a: [4]
+    I32DivModFast.o          174
+    IntDivZer.o                2
+    cexit.o                   10
+    cmain.o                   26
+    copy_init3.o              48
+    cstartup_M.o              12
+    data_init.o               40
+    zero_init3.o              42
+    ----------------------------------------------
+    Total:                   354
+
+shb_l.a: [5]
+    exit.o                    20
+    ----------------------------------------------
+    Total:                    20
+
+    Linker created                     36    1 024
+--------------------------------------------------
+    Grand Total:           2 000       64    1 057
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address  Size  Type      Object
+-----                      -------  ----  ----      ------
+?main                   0x08000751        Code  Gb  cmain.o [4]
+APBAHBPrescTable        0x20000000  0x10  Data  Lc  stm32f0xx_rcc.o [1]
+BUTTON_CLK              0x080001e4   0x4  Data  Gb  stm32f0_discovery.o [1]
+BUTTON_EXTI_LINE        0x080001e8   0x2  Data  Gb  stm32f0_discovery.o [1]
+BUTTON_IRQn             0x080001f4   0x2  Data  Gb  stm32f0_discovery.o [1]
+BUTTON_PIN              0x080001e0   0x2  Data  Gb  stm32f0_discovery.o [1]
+BUTTON_PIN_SOURCE       0x080001f0   0x2  Data  Gb  stm32f0_discovery.o [1]
+BUTTON_PORT             0x20000018   0x4  Data  Gb  stm32f0_discovery.o [1]
+BUTTON_PORT_SOURCE      0x080001ec   0x2  Data  Gb  stm32f0_discovery.o [1]
+BlinkSpeed              0x20000020   0x1  Data  Gb  main.o [1]
+CSTACK$$Base            0x20000028         --   Gb  - Linker created -
+CSTACK$$Limit           0x20000428         --   Gb  - Linker created -
+Delay                   0x080005e7  0x14  Code  Gb  main.o [1]
+EXTI_Init               0x080003cd  0x66  Code  Gb  stm32f0xx_exti.o [1]
+GPIO_CLK                0x080001d8   0x8  Data  Gb  stm32f0_discovery.o [1]
+GPIO_Init               0x08000329  0x6a  Code  Gb  stm32f0xx_gpio.o [1]
+GPIO_PIN                0x080001d4   0x4  Data  Gb  stm32f0_discovery.o [1]
+GPIO_PORT               0x20000010   0x8  Data  Gb  stm32f0_discovery.o [1]
+GPIO_ReadInputDataBit   0x08000393   0x8  Code  Gb  stm32f0xx_gpio.o [1]
+HardFault_Handler       0x080007ab   0x2  Code  Gb  stm32f0xx_it.o [1]
+NMI_Handler             0x080007a9   0x2  Code  Gb  stm32f0xx_it.o [1]
+NVIC_Init               0x08000439  0x44  Code  Gb  stm32f0xx_misc.o [1]
+PendSV_Handler          0x080007af   0x2  Code  Gb  stm32f0xx_it.o [1]
+RCC_AHBPeriphClockCmd   0x080002df  0x14  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_APB2PeriphClockCmd  0x080002f3  0x14  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_GetClocksFreq       0x08000221  0xbe  Code  Gb  stm32f0xx_rcc.o [1]
+Region$$Table$$Base     0x0800072c         --   Gb  - Linker created -
+Region$$Table$$Limit    0x08000750         --   Gb  - Linker created -
+STM_EVAL_LEDInit        0x080000c1  0x38  Code  Gb  stm32f0_discovery.o [1]
+STM_EVAL_LEDOff         0x08000109  0x10  Code  Gb  stm32f0_discovery.o [1]
+STM_EVAL_LEDOn          0x080000f9  0x10  Code  Gb  stm32f0_discovery.o [1]
+STM_EVAL_LEDToggle      0x08000119  0x16  Code  Gb  stm32f0_discovery.o [1]
+STM_EVAL_PBGetState     0x080001b9  0x14  Code  Gb  stm32f0_discovery.o [1]
+STM_EVAL_PBInit         0x08000131  0x88  Code  Gb  stm32f0_discovery.o [1]
+SVC_Handler             0x080007ad   0x2  Code  Gb  stm32f0xx_it.o [1]
+SYSCFG_EXTILineConfig   0x080003a5  0x24  Code  Gb  stm32f0xx_syscfg.o [1]
+SysTick_Handler         0x080007b1   0x8  Code  Gb  stm32f0xx_it.o [1]
+SystemInit              0x08000621  0x98  Code  Gb  system_stm32f0xx.o [1]
+TimingDelay             0x2000001c   0x4  Data  Lc  main.o [1]
+TimingDelay_Decrement   0x080005fb  0x10  Code  Gb  main.o [1]
+__ICFEDIT_region_RAM_end__ {Abs}
+                        0x20001fff         --   Gb  command line/config [2]
+__ICFEDIT_region_RAM_start__ {Abs}
+                        0x20000000         --   Gb  command line/config [2]
+__aeabi_idiv0           0x08000539        Code  Gb  IntDivZer.o [4]
+__aeabi_uidiv           0x08000489        Code  Gb  I32DivModFast.o [4]
+__aeabi_uidivmod        0x08000489        Code  Gb  I32DivModFast.o [4]
+__cmain                 0x08000751        Code  Gb  cmain.o [4]
+__exit                  0x08000785  0x14  Code  Gb  exit.o [5]
+__iar_copy_init3        0x080006d5  0x30  Code  Gb  copy_init3.o [4]
+__iar_data_init3        0x08000705  0x28  Code  Gb  data_init.o [4]
+__iar_program_start     0x080007b9        Code  Gb  cstartup_M.o [4]
+__iar_zero_init3        0x080001f7  0x2a  Code  Gb  zero_init3.o [4]
+__low_level_init        0x0800076b   0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x08000000        Data  Gb  startup_stm32f0xx.o [1]
+_call_main              0x0800075d        Code  Gb  cmain.o [4]
+_exit                   0x08000779        Code  Gb  cexit.o [4]
+_main                   0x08000767        Code  Gb  cmain.o [4]
+exit                    0x0800076f   0x8  Code  Gb  exit.o [3]
+main                    0x0800053d  0xaa  Code  Gb  main.o [1]
+
+
+[1] = E:\Downloads\stm32f0discovery_fw\STM32F0-Discovery_FW_V1.0.0\Project\Demonstration\EWARM\STM32F0_Discovery\Obj
+[2] = command line
+[3] = dl6M_tln.a
+[4] = rt6M_tl.a
+[5] = shb_l.a
+
+  2 000 bytes of readonly  code memory
+     64 bytes of readonly  data memory
+  1 057 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

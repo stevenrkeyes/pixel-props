@@ -1,0 +1,250 @@
+###############################################################################
+#                                                                             #
+# IAR ELF Linker V6.70.1.5641/W32 for ARM               10/Nov/2013  22:15:04 #
+# Copyright 2007-2013 IAR Systems AB.                                         #
+#                                                                             #
+#    Output file  =  C:\Users\Steven\Desktop\STM32F0-Discovery_FW_V1.0.0\Proj #
+#                    ect\Peripheral_Examples\DMA_FLASH_RAM\EWARM\DMA_FLASH_RA #
+#                    M\Exe\DMA_FLASH_RAM.out                                  #
+#    Map file     =  C:\Users\Steven\Desktop\STM32F0-Discovery_FW_V1.0.0\Proj #
+#                    ect\Peripheral_Examples\DMA_FLASH_RAM\EWARM\DMA_FLASH_RA #
+#                    M\List\DMA_FLASH_RAM.map                                 #
+#    Command line =  C:\Users\Steven\Desktop\STM32F0-Discovery_FW_V1.0.0\Proj #
+#                    ect\Peripheral_Examples\DMA_FLASH_RAM\EWARM\DMA_FLASH_RA #
+#                    M\Obj\main.o C:\Users\Steven\Desktop\STM32F0-Discovery_F #
+#                    W_V1.0.0\Project\Peripheral_Examples\DMA_FLASH_RAM\EWARM #
+#                    \DMA_FLASH_RAM\Obj\startup_stm32f0xx.o                   #
+#                    C:\Users\Steven\Desktop\STM32F0-Discovery_FW_V1.0.0\Proj #
+#                    ect\Peripheral_Examples\DMA_FLASH_RAM\EWARM\DMA_FLASH_RA #
+#                    M\Obj\stm32f0_discovery.o C:\Users\Steven\Desktop\STM32F #
+#                    0-Discovery_FW_V1.0.0\Project\Peripheral_Examples\DMA_FL #
+#                    ASH_RAM\EWARM\DMA_FLASH_RAM\Obj\stm32f0xx_dma.o          #
+#                    C:\Users\Steven\Desktop\STM32F0-Discovery_FW_V1.0.0\Proj #
+#                    ect\Peripheral_Examples\DMA_FLASH_RAM\EWARM\DMA_FLASH_RA #
+#                    M\Obj\stm32f0xx_gpio.o C:\Users\Steven\Desktop\STM32F0-D #
+#                    iscovery_FW_V1.0.0\Project\Peripheral_Examples\DMA_FLASH #
+#                    _RAM\EWARM\DMA_FLASH_RAM\Obj\stm32f0xx_it.o              #
+#                    C:\Users\Steven\Desktop\STM32F0-Discovery_FW_V1.0.0\Proj #
+#                    ect\Peripheral_Examples\DMA_FLASH_RAM\EWARM\DMA_FLASH_RA #
+#                    M\Obj\stm32f0xx_misc.o C:\Users\Steven\Desktop\STM32F0-D #
+#                    iscovery_FW_V1.0.0\Project\Peripheral_Examples\DMA_FLASH #
+#                    _RAM\EWARM\DMA_FLASH_RAM\Obj\stm32f0xx_rcc.o             #
+#                    C:\Users\Steven\Desktop\STM32F0-Discovery_FW_V1.0.0\Proj #
+#                    ect\Peripheral_Examples\DMA_FLASH_RAM\EWARM\DMA_FLASH_RA #
+#                    M\Obj\system_stm32f0xx.o --redirect                      #
+#                    _Printf=_PrintfSmall --redirect _Scanf=_ScanfSmall -o    #
+#                    C:\Users\Steven\Desktop\STM32F0-Discovery_FW_V1.0.0\Proj #
+#                    ect\Peripheral_Examples\DMA_FLASH_RAM\EWARM\DMA_FLASH_RA #
+#                    M\Exe\DMA_FLASH_RAM.out --map                            #
+#                    C:\Users\Steven\Desktop\STM32F0-Discovery_FW_V1.0.0\Proj #
+#                    ect\Peripheral_Examples\DMA_FLASH_RAM\EWARM\DMA_FLASH_RA #
+#                    M\List\DMA_FLASH_RAM.map --config                        #
+#                    C:\Users\Steven\Desktop\STM32F0-Discovery_FW_V1.0.0\Proj #
+#                    ect\Peripheral_Examples\DMA_FLASH_RAM\EWARM\stm32f0xx_fl #
+#                    ash.icf --semihosting --entry __iar_program_start --vfe  #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x08000000 { ro section .intvec };
+"P1":  place in [from 0x08000000 to 0x0800ffff] { ro };
+"P2":  place in [from 0x20000000 to 0x20001fff] { rw, block CSTACK, block HEAP };
+
+  Section          Kind        Address   Size  Object
+  -------          ----        -------   ----  ------
+"A1":                                    0xc0
+  .intvec          ro code  0x08000000   0xc0  startup_stm32f0xx.o [1]
+                          - 0x080000c0   0xc0
+
+"P1":                                   0x450
+  .text            ro code  0x080000c0  0x12c  main.o [1]
+  .text            ro code  0x080001ec   0x18  stm32f0xx_rcc.o [1]
+  .text            ro code  0x08000204   0xe4  stm32f0xx_dma.o [1]
+  .text            ro code  0x080002e8   0x50  stm32f0xx_misc.o [1]
+  .text            ro code  0x08000338   0xb4  system_stm32f0xx.o [1]
+  .text            ro code  0x080003ec   0x2a  zero_init3.o [4]
+  .text            ro code  0x08000416    0x2  startup_stm32f0xx.o [1]
+  .text            ro code  0x08000418   0x28  stm32f0xx_it.o [1]
+  .text            ro code  0x08000440   0x28  data_init.o [4]
+  .iar.init_table  const    0x08000468   0x10  - Linker created -
+  .text            ro code  0x08000478   0x1a  cmain.o [4]
+  .text            ro code  0x08000492    0x4  low_level_init.o [3]
+  .text            ro code  0x08000496    0x8  exit.o [3]
+  .text            ro code  0x0800049e    0x2  startup_stm32f0xx.o [1]
+  .text            ro code  0x080004a0    0xa  cexit.o [4]
+  .text            ro code  0x080004aa    0x2  startup_stm32f0xx.o [1]
+  .text            ro code  0x080004ac   0x14  exit.o [5]
+  .text            ro code  0x080004c0   0x10  startup_stm32f0xx.o [1]
+  .text            ro code  0x080004d0    0xc  cstartup_M.o [4]
+  .text            ro code  0x080004dc    0x2  startup_stm32f0xx.o [1]
+  .text            ro code  0x080004de    0x2  startup_stm32f0xx.o [1]
+  .text            ro code  0x080004e0    0x2  startup_stm32f0xx.o [1]
+  .text            ro code  0x080004e2    0x2  startup_stm32f0xx.o [1]
+  .text            ro code  0x080004e4    0x2  startup_stm32f0xx.o [1]
+  .text            ro code  0x080004e6    0x2  startup_stm32f0xx.o [1]
+  .text            ro code  0x080004e8    0x2  startup_stm32f0xx.o [1]
+  .text            ro code  0x080004ea    0x2  startup_stm32f0xx.o [1]
+  .text            ro code  0x080004ec    0x2  startup_stm32f0xx.o [1]
+  .text            ro code  0x080004ee    0x2  startup_stm32f0xx.o [1]
+  .text            ro code  0x080004f0    0x2  startup_stm32f0xx.o [1]
+  .text            ro code  0x080004f2    0x2  startup_stm32f0xx.o [1]
+  .text            ro code  0x080004f4    0x2  startup_stm32f0xx.o [1]
+  .text            ro code  0x080004f6    0x2  startup_stm32f0xx.o [1]
+  .text            ro code  0x080004f8    0x2  startup_stm32f0xx.o [1]
+  .text            ro code  0x080004fa    0x2  startup_stm32f0xx.o [1]
+  .text            ro code  0x080004fc    0x2  startup_stm32f0xx.o [1]
+  .text            ro code  0x080004fe    0x2  startup_stm32f0xx.o [1]
+  .text            ro code  0x08000500    0x2  startup_stm32f0xx.o [1]
+  .text            ro code  0x08000502    0x2  startup_stm32f0xx.o [1]
+  .text            ro code  0x08000504    0x2  startup_stm32f0xx.o [1]
+  .text            ro code  0x08000506    0x2  startup_stm32f0xx.o [1]
+  .text            ro code  0x08000508    0x2  startup_stm32f0xx.o [1]
+  .text            ro code  0x0800050a    0x2  startup_stm32f0xx.o [1]
+  .text            ro code  0x0800050c    0x2  startup_stm32f0xx.o [1]
+  .rodata          const    0x0800050e    0x0  zero_init3.o [4]
+                          - 0x0800050e  0x44e
+
+"P2", part 1 of 2:                       0xb8
+  .bss             zero     0x20000000   0xb8  main.o [1]
+                          - 0x200000b8   0xb8
+
+"P2", part 2 of 2:                      0x400
+  CSTACK                    0x200000b8  0x400  <Block>
+    CSTACK         uninit   0x200000b8  0x400  <Block tail>
+                          - 0x200004b8  0x400
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0xb8:
+          0x20000000  0xb8
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module               ro code  ro data  rw data
+    ------               -------  -------  -------
+C:\Users\Steven\Desktop\STM32F0-Discovery_FW_V1.0.0\Project\Peripheral_Examples\DMA_FLASH_RAM\EWARM\DMA_FLASH_RAM\Obj: [1]
+    main.o                   300               184
+    startup_stm32f0xx.o      264
+    stm32f0xx_dma.o          228
+    stm32f0xx_it.o            40
+    stm32f0xx_misc.o          80
+    stm32f0xx_rcc.o           24
+    system_stm32f0xx.o       180
+    ----------------------------------------------
+    Total:                 1 116               184
+
+command line: [2]
+    ----------------------------------------------
+    Total:
+
+dl6M_tln.a: [3]
+    exit.o                     8
+    low_level_init.o           4
+    ----------------------------------------------
+    Total:                    12
+
+rt6M_tl.a: [4]
+    cexit.o                   10
+    cmain.o                   26
+    cstartup_M.o              12
+    data_init.o               40
+    zero_init3.o              42
+    ----------------------------------------------
+    Total:                   130
+
+shb_l.a: [5]
+    exit.o                    20
+    ----------------------------------------------
+    Total:                    20
+
+    Linker created                     16    1 024
+--------------------------------------------------
+    Grand Total:           1 278       16    1 208
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                     Address  Size  Type      Object
+-----                     -------  ----  ----      ------
+?main                  0x08000479        Code  Gb  cmain.o [4]
+Buffercmp              0x0800014d  0x20  Code  Gb  main.o [1]
+CSTACK$$Base           0x200000b8         --   Gb  - Linker created -
+CSTACK$$Limit          0x200004b8         --   Gb  - Linker created -
+DMA1_Channel1_IRQHandler
+                       0x08000423  0x1a  Code  Gb  stm32f0xx_it.o [1]
+DMA_ClearITPendingBit  0x080002cd   0x6  Code  Gb  stm32f0xx_dma.o [1]
+DMA_Cmd                0x08000295  0x14  Code  Gb  stm32f0xx_dma.o [1]
+DMA_DeInit             0x08000205  0x5a  Code  Gb  stm32f0xx_dma.o [1]
+DMA_GetITStatus        0x080002bb   0x2  Code  Gb  stm32f0xx_dma.o [1]
+DMA_ITConfig           0x080002a9  0x12  Code  Gb  stm32f0xx_dma.o [1]
+DMA_Init               0x0800025f  0x36  Code  Gb  stm32f0xx_dma.o [1]
+DMA_InitStructure      0x20000008  0x2c  Data  Gb  main.o [1]
+DstBuffer              0x20000038  0x80  Data  Gb  main.o [1]
+EndOfTransfer          0x20000034   0x4  Data  Gb  main.o [1]
+HardFault_Handler      0x0800041b   0x2  Code  Gb  stm32f0xx_it.o [1]
+NMI_Handler            0x08000419   0x2  Code  Gb  stm32f0xx_it.o [1]
+NVIC_Init              0x080002e9  0x44  Code  Gb  stm32f0xx_misc.o [1]
+NVIC_InitStructure     0x20000000   0x4  Data  Gb  main.o [1]
+PendSV_Handler         0x0800041f   0x2  Code  Gb  stm32f0xx_it.o [1]
+RCC_AHBPeriphClockCmd  0x080001ed  0x14  Code  Gb  stm32f0xx_rcc.o [1]
+Region$$Table$$Base    0x08000468         --   Gb  - Linker created -
+Region$$Table$$Limit   0x08000478         --   Gb  - Linker created -
+SVC_Handler            0x0800041d   0x2  Code  Gb  stm32f0xx_it.o [1]
+SrcBuffer              0x0800016c  0x80  Data  Gb  main.o [1]
+SysTick_Handler        0x08000421   0x2  Code  Gb  stm32f0xx_it.o [1]
+SystemInit             0x08000339  0x98  Code  Gb  system_stm32f0xx.o [1]
+TransferStatus         0x20000004   0x1  Data  Gb  main.o [1]
+__ICFEDIT_region_RAM_end__ {Abs}
+                       0x20001fff         --   Gb  command line/config [2]
+__ICFEDIT_region_RAM_start__ {Abs}
+                       0x20000000         --   Gb  command line/config [2]
+__cmain                0x08000479        Code  Gb  cmain.o [4]
+__exit                 0x080004ad  0x14  Code  Gb  exit.o [5]
+__iar_data_init3       0x08000441  0x28  Code  Gb  data_init.o [4]
+__iar_program_start    0x080004d1        Code  Gb  cstartup_M.o [4]
+__iar_zero_init3       0x080003ed  0x2a  Code  Gb  zero_init3.o [4]
+__low_level_init       0x08000493   0x4  Code  Gb  low_level_init.o [3]
+__vector_table         0x08000000        Data  Gb  startup_stm32f0xx.o [1]
+_call_main             0x08000485        Code  Gb  cmain.o [4]
+_exit                  0x080004a1        Code  Gb  cexit.o [4]
+_main                  0x0800048f        Code  Gb  cmain.o [4]
+exit                   0x08000497   0x8  Code  Gb  exit.o [3]
+main                   0x080000c1  0x82  Code  Gb  main.o [1]
+
+
+[1] = C:\Users\Steven\Desktop\STM32F0-Discovery_FW_V1.0.0\Project\Peripheral_Examples\DMA_FLASH_RAM\EWARM\DMA_FLASH_RAM\Obj
+[2] = command line
+[3] = dl6M_tln.a
+[4] = rt6M_tl.a
+[5] = shb_l.a
+
+  1 278 bytes of readonly  code memory
+     16 bytes of readonly  data memory
+  1 208 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
