@@ -32,6 +32,9 @@
     <path>$WS_DIR$\..\..\Peripheral_Examples\NVIC_WFI_Mode\EWARM\NVIC_WFI_Mode.ewp</path>
   </project>
   <project>
+    <path>$WS_DIR$\..\..\Peripheral_Examples\PWM_Blink\PWM_Blink.ewp</path>
+  </project>
+  <project>
     <path>$WS_DIR$\..\..\Peripheral_Examples\PWR_CurrentConsumption\EWARM\PWR_CurrentConsumption.ewp</path>
   </project>
   <project>

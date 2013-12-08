@@ -1,50 +1,50 @@
 ###############################################################################
 #                                                                             #
-# IAR ELF Linker V6.70.1.5641/W32 for ARM               10/Nov/2013  22:02:26 #
+# IAR ELF Linker V6.70.1.5641/W32 for ARM               08/Dec/2013  12:48:59 #
 # Copyright 2007-2013 IAR Systems AB.                                         #
 #                                                                             #
-#    Output file  =  E:\Downloads\stm32f0discovery_fw\STM32F0-Discovery_FW_V1 #
-#                    .0.0\Project\Peripheral_Examples\TIM_PWM_Output\EWARM\TI #
-#                    M_PWM_Output\Exe\TIM_PWM_Output.out                      #
-#    Map file     =  E:\Downloads\stm32f0discovery_fw\STM32F0-Discovery_FW_V1 #
-#                    .0.0\Project\Peripheral_Examples\TIM_PWM_Output\EWARM\TI #
-#                    M_PWM_Output\List\TIM_PWM_Output.map                     #
-#    Command line =  E:\Downloads\stm32f0discovery_fw\STM32F0-Discovery_FW_V1 #
-#                    .0.0\Project\Peripheral_Examples\TIM_PWM_Output\EWARM\TI #
-#                    M_PWM_Output\Obj\main.o E:\Downloads\stm32f0discovery_fw #
-#                    \STM32F0-Discovery_FW_V1.0.0\Project\Peripheral_Examples #
-#                    \TIM_PWM_Output\EWARM\TIM_PWM_Output\Obj\startup_stm32f0 #
-#                    xx.o E:\Downloads\stm32f0discovery_fw\STM32F0-Discovery_ #
-#                    FW_V1.0.0\Project\Peripheral_Examples\TIM_PWM_Output\EWA #
-#                    RM\TIM_PWM_Output\Obj\stm32f0_discovery.o                #
-#                    E:\Downloads\stm32f0discovery_fw\STM32F0-Discovery_FW_V1 #
-#                    .0.0\Project\Peripheral_Examples\TIM_PWM_Output\EWARM\TI #
-#                    M_PWM_Output\Obj\stm32f0xx_gpio.o                        #
-#                    E:\Downloads\stm32f0discovery_fw\STM32F0-Discovery_FW_V1 #
-#                    .0.0\Project\Peripheral_Examples\TIM_PWM_Output\EWARM\TI #
-#                    M_PWM_Output\Obj\stm32f0xx_it.o                          #
-#                    E:\Downloads\stm32f0discovery_fw\STM32F0-Discovery_FW_V1 #
-#                    .0.0\Project\Peripheral_Examples\TIM_PWM_Output\EWARM\TI #
-#                    M_PWM_Output\Obj\stm32f0xx_misc.o                        #
-#                    E:\Downloads\stm32f0discovery_fw\STM32F0-Discovery_FW_V1 #
-#                    .0.0\Project\Peripheral_Examples\TIM_PWM_Output\EWARM\TI #
-#                    M_PWM_Output\Obj\stm32f0xx_rcc.o                         #
-#                    E:\Downloads\stm32f0discovery_fw\STM32F0-Discovery_FW_V1 #
-#                    .0.0\Project\Peripheral_Examples\TIM_PWM_Output\EWARM\TI #
-#                    M_PWM_Output\Obj\stm32f0xx_tim.o                         #
-#                    E:\Downloads\stm32f0discovery_fw\STM32F0-Discovery_FW_V1 #
-#                    .0.0\Project\Peripheral_Examples\TIM_PWM_Output\EWARM\TI #
-#                    M_PWM_Output\Obj\system_stm32f0xx.o --redirect           #
+#    Output file  =  C:\Users\Steven\Desktop\pixel-props\STM32F0-Discovery_FW #
+#                    _V1.0.0\Project\Peripheral_Examples\TIM_PWM_Output\EWARM #
+#                    \TIM_PWM_Output\Exe\TIM_PWM_Output.out                   #
+#    Map file     =  C:\Users\Steven\Desktop\pixel-props\STM32F0-Discovery_FW #
+#                    _V1.0.0\Project\Peripheral_Examples\TIM_PWM_Output\EWARM #
+#                    \TIM_PWM_Output\List\TIM_PWM_Output.map                  #
+#    Command line =  C:\Users\Steven\Desktop\pixel-props\STM32F0-Discovery_FW #
+#                    _V1.0.0\Project\Peripheral_Examples\TIM_PWM_Output\EWARM #
+#                    \TIM_PWM_Output\Obj\main.o C:\Users\Steven\Desktop\pixel #
+#                    -props\STM32F0-Discovery_FW_V1.0.0\Project\Peripheral_Ex #
+#                    amples\TIM_PWM_Output\EWARM\TIM_PWM_Output\Obj\startup_s #
+#                    tm32f0xx.o C:\Users\Steven\Desktop\pixel-props\STM32F0-D #
+#                    iscovery_FW_V1.0.0\Project\Peripheral_Examples\TIM_PWM_O #
+#                    utput\EWARM\TIM_PWM_Output\Obj\stm32f0_discovery.o       #
+#                    C:\Users\Steven\Desktop\pixel-props\STM32F0-Discovery_FW #
+#                    _V1.0.0\Project\Peripheral_Examples\TIM_PWM_Output\EWARM #
+#                    \TIM_PWM_Output\Obj\stm32f0xx_gpio.o                     #
+#                    C:\Users\Steven\Desktop\pixel-props\STM32F0-Discovery_FW #
+#                    _V1.0.0\Project\Peripheral_Examples\TIM_PWM_Output\EWARM #
+#                    \TIM_PWM_Output\Obj\stm32f0xx_it.o                       #
+#                    C:\Users\Steven\Desktop\pixel-props\STM32F0-Discovery_FW #
+#                    _V1.0.0\Project\Peripheral_Examples\TIM_PWM_Output\EWARM #
+#                    \TIM_PWM_Output\Obj\stm32f0xx_misc.o                     #
+#                    C:\Users\Steven\Desktop\pixel-props\STM32F0-Discovery_FW #
+#                    _V1.0.0\Project\Peripheral_Examples\TIM_PWM_Output\EWARM #
+#                    \TIM_PWM_Output\Obj\stm32f0xx_rcc.o                      #
+#                    C:\Users\Steven\Desktop\pixel-props\STM32F0-Discovery_FW #
+#                    _V1.0.0\Project\Peripheral_Examples\TIM_PWM_Output\EWARM #
+#                    \TIM_PWM_Output\Obj\stm32f0xx_tim.o                      #
+#                    C:\Users\Steven\Desktop\pixel-props\STM32F0-Discovery_FW #
+#                    _V1.0.0\Project\Peripheral_Examples\TIM_PWM_Output\EWARM #
+#                    \TIM_PWM_Output\Obj\system_stm32f0xx.o --redirect        #
 #                    _Printf=_PrintfSmall --redirect _Scanf=_ScanfSmall -o    #
-#                    E:\Downloads\stm32f0discovery_fw\STM32F0-Discovery_FW_V1 #
-#                    .0.0\Project\Peripheral_Examples\TIM_PWM_Output\EWARM\TI #
-#                    M_PWM_Output\Exe\TIM_PWM_Output.out --map                #
-#                    E:\Downloads\stm32f0discovery_fw\STM32F0-Discovery_FW_V1 #
-#                    .0.0\Project\Peripheral_Examples\TIM_PWM_Output\EWARM\TI #
-#                    M_PWM_Output\List\TIM_PWM_Output.map --config            #
-#                    E:\Downloads\stm32f0discovery_fw\STM32F0-Discovery_FW_V1 #
-#                    .0.0\Project\Peripheral_Examples\TIM_PWM_Output\EWARM\st #
-#                    m32f0xx_flash.icf --semihosting --entry                  #
+#                    C:\Users\Steven\Desktop\pixel-props\STM32F0-Discovery_FW #
+#                    _V1.0.0\Project\Peripheral_Examples\TIM_PWM_Output\EWARM #
+#                    \TIM_PWM_Output\Exe\TIM_PWM_Output.out --map             #
+#                    C:\Users\Steven\Desktop\pixel-props\STM32F0-Discovery_FW #
+#                    _V1.0.0\Project\Peripheral_Examples\TIM_PWM_Output\EWARM #
+#                    \TIM_PWM_Output\List\TIM_PWM_Output.map --config         #
+#                    C:\Users\Steven\Desktop\pixel-props\STM32F0-Discovery_FW #
+#                    _V1.0.0\Project\Peripheral_Examples\TIM_PWM_Output\EWARM #
+#                    \stm32f0xx_flash.icf --semihosting --entry               #
 #                    __iar_program_start --vfe                                #
 #                                                                             #
 #                                                                             #
@@ -72,63 +72,68 @@ __SystemLibrary = DLib
   .intvec            ro code  0x08000000   0xc0  startup_stm32f0xx.o [1]
                             - 0x080000c0   0xc0
 
-"P1":                                     0x708
-  .text              ro code  0x080000c0  0x260  stm32f0xx_tim.o [1]
-  .text              ro code  0x08000320  0x138  main.o [1]
-  .text              ro code  0x08000458   0xae  I32DivModFast.o [4]
-  .text              ro code  0x08000506    0xa  stm32f0xx_it.o [1]
-  .text              ro code  0x08000510   0x30  stm32f0xx_rcc.o [1]
-  .text              ro code  0x08000540   0x8a  stm32f0xx_gpio.o [1]
-  .text              ro code  0x080005ca    0x2  startup_stm32f0xx.o [1]
-  .text              ro code  0x080005cc    0x2  IntDivZer.o [4]
-  .text              ro code  0x080005ce    0x2  startup_stm32f0xx.o [1]
-  .text              ro code  0x080005d0   0xb4  system_stm32f0xx.o [1]
-  .text              ro code  0x08000684   0x30  copy_init3.o [4]
-  .text              ro code  0x080006b4   0x28  data_init.o [4]
-  .iar.init_table    const    0x080006dc   0x14  - Linker created -
-  .text              ro code  0x080006f0   0x1a  cmain.o [4]
-  .text              ro code  0x0800070a    0x4  low_level_init.o [3]
-  .text              ro code  0x0800070e    0x8  exit.o [3]
-  .text              ro code  0x08000716    0x2  startup_stm32f0xx.o [1]
-  .text              ro code  0x08000718    0xa  cexit.o [4]
-  .text              ro code  0x08000722    0x2  startup_stm32f0xx.o [1]
-  .text              ro code  0x08000724   0x14  exit.o [5]
-  .text              ro code  0x08000738   0x10  startup_stm32f0xx.o [1]
-  .text              ro code  0x08000748    0xc  cstartup_M.o [4]
-  .text              ro code  0x08000754    0x2  startup_stm32f0xx.o [1]
-  .text              ro code  0x08000756    0x2  startup_stm32f0xx.o [1]
-  .text              ro code  0x08000758    0x2  startup_stm32f0xx.o [1]
-  .text              ro code  0x0800075a    0x2  startup_stm32f0xx.o [1]
-  .text              ro code  0x0800075c    0x2  startup_stm32f0xx.o [1]
-  .text              ro code  0x0800075e    0x2  startup_stm32f0xx.o [1]
-  .text              ro code  0x08000760    0x2  startup_stm32f0xx.o [1]
-  .text              ro code  0x08000762    0x2  startup_stm32f0xx.o [1]
-  .text              ro code  0x08000764    0x2  startup_stm32f0xx.o [1]
-  .text              ro code  0x08000766    0x2  startup_stm32f0xx.o [1]
-  .text              ro code  0x08000768    0x2  startup_stm32f0xx.o [1]
-  .text              ro code  0x0800076a    0x2  startup_stm32f0xx.o [1]
-  .text              ro code  0x0800076c    0x2  startup_stm32f0xx.o [1]
-  .text              ro code  0x0800076e    0x2  startup_stm32f0xx.o [1]
-  .text              ro code  0x08000770    0x2  startup_stm32f0xx.o [1]
-  .text              ro code  0x08000772    0x2  startup_stm32f0xx.o [1]
-  .text              ro code  0x08000774    0x2  startup_stm32f0xx.o [1]
-  .text              ro code  0x08000776    0x2  startup_stm32f0xx.o [1]
-  .text              ro code  0x08000778    0x2  startup_stm32f0xx.o [1]
-  .text              ro code  0x0800077a    0x2  startup_stm32f0xx.o [1]
+"P1":                                     0x72c
+  .text              ro code  0x080000c0  0x210  stm32f0xx_tim.o [1]
+  .text              ro code  0x080002d0  0x1b0  main.o [1]
+  .text              ro code  0x08000480   0xae  I32DivModFast.o [4]
+  .text              ro code  0x0800052e    0xa  stm32f0xx_it.o [1]
+  .text              ro code  0x08000538   0x30  stm32f0xx_rcc.o [1]
+  .text              ro code  0x08000568   0x8a  stm32f0xx_gpio.o [1]
+  .text              ro code  0x080005f2    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080005f4    0x2  IntDivZer.o [4]
+  .text              ro code  0x080005f6    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080005f8   0xb4  system_stm32f0xx.o [1]
+  .text              ro code  0x080006ac   0x30  copy_init3.o [4]
+  .text              ro code  0x080006dc   0x28  data_init.o [4]
+  .iar.init_table    const    0x08000704   0x14  - Linker created -
+  .text              ro code  0x08000718   0x1a  cmain.o [4]
+  .text              ro code  0x08000732    0x4  low_level_init.o [3]
+  .text              ro code  0x08000736    0x8  exit.o [3]
+  .text              ro code  0x0800073e    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x08000740    0xa  cexit.o [4]
+  .text              ro code  0x0800074a    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x0800074c   0x14  exit.o [5]
+  .text              ro code  0x08000760   0x10  startup_stm32f0xx.o [1]
+  .text              ro code  0x08000770    0xc  cstartup_M.o [4]
   .text              ro code  0x0800077c    0x2  startup_stm32f0xx.o [1]
   .text              ro code  0x0800077e    0x2  startup_stm32f0xx.o [1]
   .text              ro code  0x08000780    0x2  startup_stm32f0xx.o [1]
   .text              ro code  0x08000782    0x2  startup_stm32f0xx.o [1]
   .text              ro code  0x08000784    0x2  startup_stm32f0xx.o [1]
-  .rodata            const    0x08000786    0x0  copy_init3.o [4]
-  Initializer bytes  ro data  0x08000788   0x40  <for P2 s0>
-                            - 0x080007c8  0x708
+  .text              ro code  0x08000786    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x08000788    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x0800078a    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x0800078c    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x0800078e    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x08000790    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x08000792    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x08000794    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x08000796    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x08000798    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x0800079a    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x0800079c    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x0800079e    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080007a0    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080007a2    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080007a4    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080007a6    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080007a8    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080007aa    0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080007ac    0x2  startup_stm32f0xx.o [1]
+  .rodata            const    0x080007ae    0x0  copy_init3.o [4]
+  Initializer bytes  ro data  0x080007b0   0x3c  <for P2 s0>
+                            - 0x080007ec  0x72c
 
 "P2", part 1 of 2:                         0x40
-  P2 s0                       0x20000000   0x40  <Init block>
-    .bss             inited   0x20000000   0x2a  main.o [1]
-    .data            inited   0x2000002c   0x14  system_stm32f0xx.o [1]
-                            - 0x20000040   0x40
+  P2 s0                       0x20000000   0x3c  <Init block>
+    .data            inited   0x20000000   0x14  system_stm32f0xx.o [1]
+    .bss             inited   0x20000014   0x14  main.o [1]
+    .bss             inited   0x20000028    0xc  main.o [1]
+    .bss             inited   0x20000034    0x2  main.o [1]
+    .bss             inited   0x20000036    0x2  main.o [1]
+    .bss             inited   0x20000038    0x2  main.o [1]
+    .bss             inited   0x2000003a    0x2  main.o [1]
+                            - 0x2000003c   0x3c
 
 "P2", part 2 of 2:                        0x400
   CSTACK                      0x20000040  0x400  <Block>
@@ -143,10 +148,10 @@ __SystemLibrary = DLib
           Address     Size
           -------     ----
 Copy (__iar_copy_init3)
-    1 source range, total size 0x40:
-          0x08000788  0x40
-    1 destination range, total size 0x40:
-          0x20000000  0x40
+    1 source range, total size 0x3c:
+          0x080007b0  0x3c
+    1 destination range, total size 0x3c:
+          0x20000000  0x3c
 
 
 
@@ -156,16 +161,16 @@ Copy (__iar_copy_init3)
 
     Module               ro code  ro data  rw data
     ------               -------  -------  -------
-E:\Downloads\stm32f0discovery_fw\STM32F0-Discovery_FW_V1.0.0\Project\Peripheral_Examples\TIM_PWM_Output\EWARM\TIM_PWM_Output\Obj: [1]
-    main.o                   312       42       42
+C:\Users\Steven\Desktop\pixel-props\STM32F0-Discovery_FW_V1.0.0\Project\Peripheral_Examples\TIM_PWM_Output\EWARM\TIM_PWM_Output\Obj: [1]
+    main.o                   432       40       40
     startup_stm32f0xx.o      266
     stm32f0xx_gpio.o         138
     stm32f0xx_it.o            10
     stm32f0xx_rcc.o           48
-    stm32f0xx_tim.o          608
-    system_stm32f0xx.o       180       22       20
+    stm32f0xx_tim.o          528
+    system_stm32f0xx.o       180       20       20
     ----------------------------------------------
-    Total:                 1 562       64       62
+    Total:                 1 602       60       60
 
 command line: [2]
     ----------------------------------------------
@@ -193,80 +198,78 @@ shb_l.a: [5]
     ----------------------------------------------
     Total:                    20
 
-    Gaps                                         2
     Linker created                     22    1 024
 --------------------------------------------------
-    Grand Total:           1 906       86    1 088
+    Grand Total:           1 946       82    1 084
 
 
 *******************************************************************************
 *** ENTRY LIST
 ***
 
-Entry                      Address  Size  Type      Object
------                      -------  ----  ----      ------
-?main                   0x080006f1        Code  Gb  cmain.o [4]
-AHBPrescTable           0x2000002c  0x10  Data  Gb  system_stm32f0xx.o [1]
-CSTACK$$Base            0x20000040         --   Gb  - Linker created -
-CSTACK$$Limit           0x20000440         --   Gb  - Linker created -
-Channel1Pulse           0x20000022   0x2  Data  Gb  main.o [1]
-Channel2Pulse           0x20000024   0x2  Data  Gb  main.o [1]
-Channel3Pulse           0x20000026   0x2  Data  Gb  main.o [1]
-Channel4Pulse           0x20000028   0x2  Data  Gb  main.o [1]
-GPIO_Init               0x08000541  0x6a  Code  Gb  stm32f0xx_gpio.o [1]
-GPIO_PinAFConfig        0x080005ab  0x20  Code  Gb  stm32f0xx_gpio.o [1]
-HardFault_Handler       0x08000509   0x2  Code  Gb  stm32f0xx_it.o [1]
-NMI_Handler             0x08000507   0x2  Code  Gb  stm32f0xx_it.o [1]
-PendSV_Handler          0x0800050d   0x2  Code  Gb  stm32f0xx_it.o [1]
-RCC_AHBPeriphClockCmd   0x08000511  0x14  Code  Gb  stm32f0xx_rcc.o [1]
-RCC_APB2PeriphClockCmd  0x08000525  0x14  Code  Gb  stm32f0xx_rcc.o [1]
-Region$$Table$$Base     0x080006dc         --   Gb  - Linker created -
-Region$$Table$$Limit    0x080006f0         --   Gb  - Linker created -
-SVC_Handler             0x0800050b   0x2  Code  Gb  stm32f0xx_it.o [1]
-SysTick_Handler         0x0800050f   0x2  Code  Gb  stm32f0xx_it.o [1]
-SystemCoreClock         0x2000003c   0x4  Data  Gb  system_stm32f0xx.o [1]
-SystemInit              0x080005d1  0x98  Code  Gb  system_stm32f0xx.o [1]
-TIM_Cmd                 0x08000119  0x14  Code  Gb  stm32f0xx_tim.o [1]
-TIM_Config              0x08000401  0x58  Code  Gb  main.o [1]
-TIM_CtrlPWMOutputs      0x0800012d  0x22  Code  Gb  stm32f0xx_tim.o [1]
-TIM_OC1Init             0x0800014f  0x64  Code  Gb  stm32f0xx_tim.o [1]
-TIM_OC2Init             0x080001c5  0x5c  Code  Gb  stm32f0xx_tim.o [1]
-TIM_OC3Init             0x0800022d  0x5a  Code  Gb  stm32f0xx_tim.o [1]
-TIM_OC4Init             0x08000287  0x44  Code  Gb  stm32f0xx_tim.o [1]
-TIM_OCInitStructure     0x2000000c  0x14  Data  Gb  main.o [1]
-TIM_TimeBaseInit        0x080000c1  0x58  Code  Gb  stm32f0xx_tim.o [1]
-TIM_TimeBaseStructure   0x20000000   0xc  Data  Gb  main.o [1]
-TimerPeriod             0x20000020   0x2  Data  Gb  main.o [1]
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+?main                   0x08000719         Code  Gb  cmain.o [4]
+AHBPrescTable           0x20000000   0x10  Data  Gb  system_stm32f0xx.o [1]
+CSTACK$$Base            0x20000040          --   Gb  - Linker created -
+CSTACK$$Limit           0x20000440          --   Gb  - Linker created -
+Channel1Pulse           0x20000036    0x2  Data  Gb  main.o [1]
+Channel2Pulse           0x20000038    0x2  Data  Gb  main.o [1]
+Channel3Pulse           0x2000003a    0x2  Data  Gb  main.o [1]
+GPIO_Init               0x08000569   0x6a  Code  Gb  stm32f0xx_gpio.o [1]
+GPIO_PinAFConfig        0x080005d3   0x20  Code  Gb  stm32f0xx_gpio.o [1]
+HardFault_Handler       0x08000531    0x2  Code  Gb  stm32f0xx_it.o [1]
+NMI_Handler             0x0800052f    0x2  Code  Gb  stm32f0xx_it.o [1]
+PendSV_Handler          0x08000535    0x2  Code  Gb  stm32f0xx_it.o [1]
+RCC_AHBPeriphClockCmd   0x08000539   0x14  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_APB2PeriphClockCmd  0x0800054d   0x14  Code  Gb  stm32f0xx_rcc.o [1]
+Region$$Table$$Base     0x08000704          --   Gb  - Linker created -
+Region$$Table$$Limit    0x08000718          --   Gb  - Linker created -
+SVC_Handler             0x08000533    0x2  Code  Gb  stm32f0xx_it.o [1]
+SysTick_Handler         0x08000537    0x2  Code  Gb  stm32f0xx_it.o [1]
+SystemCoreClock         0x20000010    0x4  Data  Gb  system_stm32f0xx.o [1]
+SystemInit              0x080005f9   0x98  Code  Gb  system_stm32f0xx.o [1]
+TIM_Cmd                 0x08000119   0x14  Code  Gb  stm32f0xx_tim.o [1]
+TIM_Config              0x08000425   0x5c  Code  Gb  main.o [1]
+TIM_CtrlPWMOutputs      0x0800012d   0x22  Code  Gb  stm32f0xx_tim.o [1]
+TIM_OC1Init             0x0800014f   0x64  Code  Gb  stm32f0xx_tim.o [1]
+TIM_OC2Init             0x080001c5   0x5c  Code  Gb  stm32f0xx_tim.o [1]
+TIM_OC3Init             0x0800022d   0x5a  Code  Gb  stm32f0xx_tim.o [1]
+TIM_OCInitStructure     0x20000014   0x14  Data  Gb  main.o [1]
+TIM_TimeBaseInit        0x080000c1   0x58  Code  Gb  stm32f0xx_tim.o [1]
+TIM_TimeBaseStructure   0x20000028    0xc  Data  Gb  main.o [1]
+TimerPeriod             0x20000034    0x2  Data  Gb  main.o [1]
 __ICFEDIT_region_RAM_end__ {Abs}
-                        0x20001fff         --   Gb  command line/config [2]
+                        0x20001fff          --   Gb  command line/config [2]
 __ICFEDIT_region_RAM_start__ {Abs}
-                        0x20000000         --   Gb  command line/config [2]
-__aeabi_idiv0           0x080005cd        Code  Gb  IntDivZer.o [4]
-__aeabi_uidiv           0x08000459        Code  Gb  I32DivModFast.o [4]
-__aeabi_uidivmod        0x08000459        Code  Gb  I32DivModFast.o [4]
-__cmain                 0x080006f1        Code  Gb  cmain.o [4]
-__exit                  0x08000725  0x14  Code  Gb  exit.o [5]
-__iar_copy_init3        0x08000685  0x30  Code  Gb  copy_init3.o [4]
-__iar_data_init3        0x080006b5  0x28  Code  Gb  data_init.o [4]
-__iar_program_start     0x08000749        Code  Gb  cstartup_M.o [4]
-__low_level_init        0x0800070b   0x4  Code  Gb  low_level_init.o [3]
-__vector_table          0x08000000        Data  Gb  startup_stm32f0xx.o [1]
-_call_main              0x080006fd        Code  Gb  cmain.o [4]
-_exit                   0x08000719        Code  Gb  cexit.o [4]
-_main                   0x08000707        Code  Gb  cmain.o [4]
-exit                    0x0800070f   0x8  Code  Gb  exit.o [3]
-main                    0x08000321  0xd0  Code  Gb  main.o [1]
+                        0x20000000          --   Gb  command line/config [2]
+__aeabi_idiv0           0x080005f5         Code  Gb  IntDivZer.o [4]
+__aeabi_uidiv           0x08000481         Code  Gb  I32DivModFast.o [4]
+__aeabi_uidivmod        0x08000481         Code  Gb  I32DivModFast.o [4]
+__cmain                 0x08000719         Code  Gb  cmain.o [4]
+__exit                  0x0800074d   0x14  Code  Gb  exit.o [5]
+__iar_copy_init3        0x080006ad   0x30  Code  Gb  copy_init3.o [4]
+__iar_data_init3        0x080006dd   0x28  Code  Gb  data_init.o [4]
+__iar_program_start     0x08000771         Code  Gb  cstartup_M.o [4]
+__low_level_init        0x08000733    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x08000000         Data  Gb  startup_stm32f0xx.o [1]
+_call_main              0x08000725         Code  Gb  cmain.o [4]
+_exit                   0x08000741         Code  Gb  cexit.o [4]
+_main                   0x0800072f         Code  Gb  cmain.o [4]
+exit                    0x08000737    0x8  Code  Gb  exit.o [3]
+main                    0x080002e5  0x116  Code  Gb  main.o [1]
+sleep                   0x080002d1   0x14  Code  Gb  main.o [1]
 
 
-[1] = E:\Downloads\stm32f0discovery_fw\STM32F0-Discovery_FW_V1.0.0\Project\Peripheral_Examples\TIM_PWM_Output\EWARM\TIM_PWM_Output\Obj
+[1] = C:\Users\Steven\Desktop\pixel-props\STM32F0-Discovery_FW_V1.0.0\Project\Peripheral_Examples\TIM_PWM_Output\EWARM\TIM_PWM_Output\Obj
 [2] = command line
 [3] = dl6M_tln.a
 [4] = rt6M_tl.a
 [5] = shb_l.a
 
-  1 906 bytes of readonly  code memory
-     86 bytes of readonly  data memory
-  1 088 bytes of readwrite data memory
+  1 946 bytes of readonly  code memory
+     82 bytes of readonly  data memory
+  1 084 bytes of readwrite data memory
 
 Errors: none
 Warnings: none

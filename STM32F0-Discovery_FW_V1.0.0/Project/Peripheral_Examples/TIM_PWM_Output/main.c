@@ -5,6 +5,9 @@
   * @version V1.0.0
   * @date    23-March-2012
   * @brief   Main program body
+  *
+  * modified by srkeyes on 30nov2013
+  *
   ******************************************************************************
   * @attention
   *
@@ -26,6 +29,8 @@
   */
 
 /* Includes ------------------------------------------------------------------*/
+#include <time.h>
+#include <math.h>
 #include "stm32f0xx.h"
 
 /** @addtogroup STM32F0_Discovery_Peripheral_Examples
@@ -43,11 +48,49 @@
 TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;
 TIM_OCInitTypeDef  TIM_OCInitStructure;
 uint16_t TimerPeriod = 0;
-uint16_t Channel1Pulse = 0, Channel2Pulse = 0, Channel3Pulse = 0, Channel4Pulse = 0;
+uint16_t Channel1Pulse = 0, Channel2Pulse = 0, Channel3Pulse = 0;
+
 /* Private function prototypes -----------------------------------------------*/
 void TIM_Config(void);
 
 /* Private functions ---------------------------------------------------------*/
+
+void sleep( time_t delay)
+{
+  // for some reason, time.h stuff isn't working
+  // so we're doing a hacky for loop
+  /*
+  time_t timer0, timer1;
+  time( &timer0 );
+  time( &timer1 );
+  while ((timer1 - timer0) < delay)
+  {
+    time( &timer1 );
+  }
+  */
+  
+  /*
+  int retTime = time(0) + delay;     // Get finishing time.
+  while (time(0) < retTime);    // Loop until it arrives.
+  */
+  
+  // it takes about a quarter microsecond to do this calculation on this chip
+  for (long i = 1; i<=delay*4000; i++){}
+}
+/*
+void TIMERS_init(){
+  
+	TIM3->PSC = 23999;		// f timer = fclk / 24000 => 1kHz
+	TIM3->ARR = 0xFFFF;
+	TIM3->CR1 = TIM_CR1_CEN;	
+	DBGMCU->CR = DBGMCU_CR_DBG_TIM3_STOP;
+}
+void Delay_ms(uint16_t ms){
+
+	TIM3->CNT = 0;
+	while (TIM3->CNT < ms){}
+}
+*/
 
 /**
   * @brief  Main program.
@@ -67,18 +110,17 @@ int main(void)
   TIM_Config();
   
   /* TIM1 Configuration ---------------------------------------------------
-   Generate PWM signals with 4 different duty cycles:
+   Generate PWM signals with 3 different duty cycles:
    TIM1 input clock (TIM1CLK) is set to APB2 clock (PCLK2)    
     => TIM1CLK = PCLK2 = SystemCoreClock
    TIM1CLK = SystemCoreClock, Prescaler = 0, TIM1 counter clock = SystemCoreClock
    SystemCoreClock is set to 48 MHz for STM32F0xx devices
    
-   The objective is to generate 4 PWM signal at 17.57 KHz:
+   The objective is to generate 3 PWM signal at 17.57 KHz:
      - TIM1_Period = (SystemCoreClock / 17570) - 1
    The channel 1 and channel 1N duty cycle is set to 50%
    The channel 2 and channel 2N duty cycle is set to 37.5%
-   The channel 3 and channel 3N duty cycle is set to 25%
-   The channel 4 duty cycle is set to 12.5%
+   The channel 3 and channel 3N duty cycle is set to 0.5%
    The Timer pulse is calculated as follows:
      - ChannelxPulse = DutyCycle * (TIM1_Period - 1) / 100
    
@@ -94,10 +136,8 @@ int main(void)
   Channel1Pulse = (uint16_t) (((uint32_t) 95 * (TimerPeriod - 1)) / 100);
   /* Compute CCR2 value to generate a duty cycle at 37.5%  for channel 2 */
   Channel2Pulse = (uint16_t) (((uint32_t) 375 * (TimerPeriod - 1)) / 1000);
-  /* Compute CCR3 value to generate a duty cycle at 25%  for channel 3 */
-  Channel3Pulse = (uint16_t) (((uint32_t) 25 * (TimerPeriod - 1)) / 100);
-  /* Compute CCR4 value to generate a duty cycle at 0.5%  for channel 4 */
-  Channel4Pulse = (uint16_t) (((uint32_t) 5 * (TimerPeriod- 1)) / 1000);
+  /* Compute CCR3 value to generate a duty cycle at 5%  for channel 3 */
+  Channel3Pulse = (uint16_t) (((uint32_t) 5 * (TimerPeriod - 1)) / 100);
 
   /* TIM1 clock enable */
   RCC_APB2PeriphClockCmd(RCC_APB2Periph_TIM1 , ENABLE);
@@ -111,12 +151,12 @@ int main(void)
 
   TIM_TimeBaseInit(TIM1, &TIM_TimeBaseStructure);
 
-  /* Channel 1, 2, 3 and 4 Configuration in PWM mode */
+  /* Channel 1, 2, and 3 Configuration in PWM mode */
   TIM_OCInitStructure.TIM_OCMode = TIM_OCMode_PWM1;
   TIM_OCInitStructure.TIM_OutputState = TIM_OutputState_Enable;
   TIM_OCInitStructure.TIM_OutputNState = TIM_OutputNState_Enable;
-  TIM_OCInitStructure.TIM_OCPolarity = TIM_OCPolarity_Low;
-  TIM_OCInitStructure.TIM_OCNPolarity = TIM_OCNPolarity_High;
+  TIM_OCInitStructure.TIM_OCPolarity = TIM_OCPolarity_High;
+  TIM_OCInitStructure.TIM_OCNPolarity = TIM_OCNPolarity_Low;
   TIM_OCInitStructure.TIM_OCIdleState = TIM_OCIdleState_Set;
   TIM_OCInitStructure.TIM_OCNIdleState = TIM_OCIdleState_Reset;
 
@@ -129,18 +169,28 @@ int main(void)
   TIM_OCInitStructure.TIM_Pulse = Channel3Pulse;
   TIM_OC3Init(TIM1, &TIM_OCInitStructure);
 
-  TIM_OCInitStructure.TIM_Pulse = Channel4Pulse;
-  TIM_OC4Init(TIM1, &TIM_OCInitStructure);
-
   /* TIM1 counter enable */
   TIM_Cmd(TIM1, ENABLE);
 
   /* TIM1 Main Output Enable */
   TIM_CtrlPWMOutputs(TIM1, ENABLE);
+    
 
   /* Infinite loop */
   while (1)
-  {}
+  {
+  
+    /* Change the pulse value, then wait, then repeat
+       I'm alternating between the Channel 1 Pulse value
+       and the Channel 3 Pulse value, applied to Ch 1
+    */
+    
+    TIM1->CCR1 = Channel3Pulse; 
+    sleep(1000);
+    TIM1->CCR1 = Channel1Pulse; 
+    sleep(1000);
+    
+  }
 }
 
 /**
@@ -155,8 +205,8 @@ void TIM_Config(void)
   /* GPIOA Clocks enable */
   RCC_AHBPeriphClockCmd( RCC_AHBPeriph_GPIOA, ENABLE);
   
-  /* GPIOA Configuration: Channel 1, 2, 3 and 4 as alternate function push-pull */
-  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8 | GPIO_Pin_9 | GPIO_Pin_10 | GPIO_Pin_11;
+  /* GPIOA Configuration: Channel 1, 2, and 3 as alternate function push-pull */
+  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8 | GPIO_Pin_9 | GPIO_Pin_10;
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
   GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
   GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
@@ -166,7 +216,6 @@ void TIM_Config(void)
   GPIO_PinAFConfig(GPIOA, GPIO_PinSource8, GPIO_AF_2);
   GPIO_PinAFConfig(GPIOA, GPIO_PinSource9, GPIO_AF_2);
   GPIO_PinAFConfig(GPIOA, GPIO_PinSource10, GPIO_AF_2);
-  GPIO_PinAFConfig(GPIOA, GPIO_PinSource11, GPIO_AF_2);
 
 }
 
@@ -186,8 +235,7 @@ void assert_failed(uint8_t* file, uint32_t line)
 
   /* Infinite loop */
   while (1)
-  {
-  }
+  {}
 }
 #endif
 
