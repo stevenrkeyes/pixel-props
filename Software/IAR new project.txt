@@ -1,0 +1,21 @@
+How to make a new project:
+1. Start with an example project that you think is similar
+2. (in the Peripherals Examples folder?) Make a folder for your new project, like "Blinky"
+3. Make a EWARM folder in that folder
+4. Open IAR
+5. Project > Create New Project ...
+6. Make an empty project, like "Blinky"
+7. Project > Import File List ...
+8. Select the project file of the example project you're starting from; the files list becomes populated with references to files from the example project.
+9. In the files list, remove everything from the User group.
+10. Copy all the files that were referenced in the example project's User group (maybe main.c, stm32f0xx_it.c, some .h files, iunno) from the example project's directory to the new project's directory.
+11. Drag the copies into IAR and drop them onto the User group in the files list to add them to the files list.
+12. Right click the new project in the files list > Options... (or Project > Options...)
+13. Right click the example project in its files list > Options...
+14. Make sure all these options are the same:
+	In particular, I noticed I needed to
+	a. Copy and paste all the directories and symbols listed in the Preprocessor tab of C/C++ Compiler
+	I also make these changes
+	b. set the device to be the correct chip (ST STM32F051x8), under General Options
+	c. check "C++ inline semantics" under the Language 1 tab of C/C++ Compiler
+15. To download the application, check the debugger options--you need to change it to ST-Link instead of Simulator and you need to checkmark that it should use the flash loader or something.

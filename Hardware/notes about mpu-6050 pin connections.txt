@@ -1,0 +1,19 @@
+1	connect to GND
+6	leave NC
+7	leave NC
+8	supply for I2C communication; either 1.8V+-5% or VDD; bypass with Ceramic, X7R, 10nF +-10%, 4V
+9	AD0; connect to GND
+10	regulator filter capacitor; Ceramic, X7R, 0.1µF +-10%, 2V to GND
+11	connect to GND
+12	interrupt digital output
+13	Power supply voltage VDD (2.375V-3.46V); bypass with Ceramic, X7R, 0.1µF +-10%, 4V
+18	Power supply ground
+19, 21	Reserved. Do not connect.
+20	Charge pump capacitor connection - Ceramic, X7R, 2.2nF +-10%, 50V to GND
+22	Reserved. Do not connect.
+23	SCL
+24	SDA
+2,3,4,5,14,15,16,17	Not internally connected. May be used for PCB trace routing.
+
+See section 11.4 of the Product Spec for routing suggestions
+
