@@ -105,6 +105,15 @@ void SysTick_Handler(void)
 /*  file (startup_stm32f0xx.s).                                               */
 /******************************************************************************/
 
+//void TIM2_IRQHandler(void);
+
+/**
+* @brief  Interrupt handler for i2c interface.
+* @param  None
+* @retval None
+*/
+
+
 /**
   * @brief  This function handles PPP interrupt request.
   * @param  None

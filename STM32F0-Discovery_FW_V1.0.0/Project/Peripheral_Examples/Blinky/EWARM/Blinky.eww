@@ -2,7 +2,7 @@
 
 <workspace>
   <project>
-    <path>$WS_DIR$\TIM_PWM_Output.ewp</path>
+    <path>$WS_DIR$\Blinky.ewp</path>
   </project>
   <batchBuild/>
 </workspace>
