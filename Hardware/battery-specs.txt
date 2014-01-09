@@ -1,0 +1,21 @@
+looks like these LED strips consume about 40W/M
+
+If our LED poi are 1/2 meter long each and are double-sided, then they require 1M of LED each
+note: the LEDs claim to have 120 degrees of viewing angle, so maybe we actually want to go triple sided.
+
+that means each poi is 40W of LEDs. At 5V, that's 8 amps; we need a 8A discharge rate from our batteries
+
+that said, I'm assuming this is for full brightness, and assumably we'll get better battery life at dimmer settings. In fact, since we're flashing patterns and stuff, we'll probably be effectively running for only half the time at most, but 8 amps will be our peak draw
+
+similarly, if we run the poi at some current C and have some minimum running life, T, then we need a capacity of at least T*C. Say C is at least 4 amps and T is at least 12 minutes. Then, we need at least 800 mAh. blooo
+
+At a bare minimum, C = 2 amps and T = 3 minutes, so we need at least 100 mAh
+
+if actually C = 8 amps, but we were still aiming small in time, like T = 3, then we need 400 mAh
+
+if C is reasonable, like C = 5 amps, and T is reasonable, like T = 15 minutes, then we need like 1250 mAh
+
+so i'm gonna shoot for something in the 1000ish mAh range
+
+
+also, it would be nice to have somewhat light batteries. Maybe <300g ish, but the lighter the better. that said, it looks like many many 2s 1000ish mAh lipos are less than 300g.
