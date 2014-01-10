@@ -17,5 +17,7 @@ if C is reasonable, like C = 5 amps, and T is reasonable, like T = 15 minutes, t
 
 so i'm gonna shoot for something in the 1000ish mAh range
 
-
 also, it would be nice to have somewhat light batteries. Maybe <300g ish, but the lighter the better. that said, it looks like many many 2s 1000ish mAh lipos are less than 300g.
+
+
+oh, also, these batteries are 4.2V/cell when fully charged. they should stop being discharged at 3.0V/cell to prevent damage, and many RC vehicles have a 3.3V/cell soft cutoff, which we could implement in software
