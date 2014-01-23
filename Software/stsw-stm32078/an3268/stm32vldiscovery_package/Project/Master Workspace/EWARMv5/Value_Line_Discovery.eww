@@ -17,6 +17,9 @@
     <path>$WS_DIR$\..\..\Examples\GPIOToggle\EWARMv5\GPIOToggle.ewp</path>
   </project>
   <project>
+    <path>$WS_DIR$\..\..\Demo\EWARMv5\I2C.ewp</path>
+  </project>
+  <project>
     <path>$WS_DIR$\..\..\Examples\IWDG\EWARMv5\IWDG.ewp</path>
   </project>
   <project>

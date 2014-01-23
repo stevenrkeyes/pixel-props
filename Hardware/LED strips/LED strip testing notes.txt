@@ -1,0 +1,14 @@
+on the Red, Grn, wht connector and Red/blk connector from the strip, these are connected electrically
+red -- red
+grn -- nothing
+wht -- blk
+
+from this, i assume the following
+
+red -- red	5V PWR
+grn -- nothing	logic
+wht -- blk	ground
+
+at full brightness, a quarter of the strip (36 LEDs) drew 1.75 Amps on a 5V power supply
+
+The code I used assumed we're running at 800kHz even though the comments suggest that ws2811 products are usually wired to be 400kHz. That said, the ws2811 datasheet confirms that it can be run in either mode.

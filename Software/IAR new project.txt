@@ -18,4 +18,5 @@ How to make a new project:
 	I also make these changes
 	b. set the device to be the correct chip (ST STM32F051x8), under General Options
 	c. check "C++ inline semantics" under the Language 1 tab of C/C++ Compiler
+	d. override the default in Linker
 15. To download the application, check the debugger options--you need to change it to ST-Link instead of Simulator and you need to checkmark that it should use the flash loader or something.
