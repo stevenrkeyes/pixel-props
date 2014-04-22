@@ -37,7 +37,7 @@ ShowSource=1
 StopOnUncaught=_ 0
 StopOnThrow=_ 0
 [DebugChecksum]
-Checksum=-102070284
+Checksum=-838083444
 [CallStack]
 ShowArgs=0
 [Disassembly]
@@ -45,7 +45,7 @@ MixedMode=1
 [Disassemble mode]
 mode=0
 [Breakpoints2]
-Bp0=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\main.c}.85.5" 0 0 1 "" 0 "" 0
+Bp0=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\main.c}.200.5" 0 0 1 "" 0 "" 0
 Count=1
 [Log file]
 LoggingEnabled=_ 0
